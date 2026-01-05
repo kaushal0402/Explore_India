@@ -1,0 +1,289 @@
+/* Custom CSS for Travel Explorer */
+
+/* Hero Section Styling (index.html) */
+.hero-section {
+    background: url('image/bg india.jpg') no-repeat center center/cover;
+    height: 80vh;
+    /* 80% of the viewport height */
+    position: relative;
+}
+
+/* Optional overlay for better text readability */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay */
+}
+
+.hero-section>div {
+    z-index: 10;
+    /* Ensures text is above the overlay */
+}
+
+/* Card Styling */
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Lift card on hover */
+}
+
+/* Tour Plan Cards (state_maharashtra.html) */
+.card-header h4 {
+    margin-top: 0;
+}
+
+/* Custom Navbar Color */
+.custom-navbar {
+    background-color: #e7f1be !important;
+}
+
+/* Custom Brown Color */
+.bg-brown-custom {
+    background-color: #aa8b53 !important;
+}
+
+/* Custom Brown Button */
+.btn-brown {
+    background-color: #aa8b53;
+    border-color: #aa8b53;
+    color: white;
+}
+
+.btn-brown:hover {
+    background-color: #8f7545;
+    /* Slightly darker shade for hover */
+    border-color: #8f7545;
+    color: white;
+}
+
+/* Custom Navbar Color Button */
+.btn-custom-nav {
+    background-color: #e7f1be;
+    border-color: #e7f1be;
+    color: black;
+    /* Dark text for light background */
+}
+
+.btn-custom-nav:hover {
+    background-color: #d4e0a0;
+    /* Slightly darker shade for hover */
+    border-color: #d4e0a0;
+    color: black;
+}
+
+/* Custom Navbar Color Background (for Footer) */
+.bg-custom-nav {
+    background-color: #e7f1be !important;
+    color: black !important;
+    /* Ensure text is visible */
+}
+
+/* ========== CART SYSTEM STYLES ========== */
+
+/* Cart Icon in Navbar */
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+    color: #aa8b53;
+}
+
+/* Cart Badge Counter */
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* Cart Modal Styles */
+.cart-modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+    transition: background-color 0.2s ease;
+}
+
+.cart-item:hover {
+    background-color: #f8f9fa;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cart-item-details {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.cart-item-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #aa8b53;
+}
+
+.cart-remove-btn {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+
+.cart-total {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    border-top: 2px solid #aa8b53;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.empty-cart-message {
+    text-align: center;
+    padding: 40px 20px;
+    color: #999;
+}
+
+.empty-cart-message i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* ========== RATING SYSTEM STYLES ========== */
+
+/* Star Rating Container */
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.stars {
+    display: inline-flex;
+    gap: 3px;
+}
+
+.star {
+    font-size: 1.2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.star.filled {
+    color: #ffc107;
+}
+
+.star:hover {
+    transform: scale(1.2);
+}
+
+/* Interactive star rating */
+.stars.interactive .star:hover,
+.stars.interactive .star:hover~.star {
+    color: #ffc107;
+}
+
+.rating-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: 5px;
+}
+
+.rating-average {
+    font-weight: bold;
+    color: #333;
+}
+
+.rating-count {
+    color: #999;
+}
+
+/* Rating display in cards */
+.card .rating-container {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Rate this package section */
+.rate-package {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.rate-package-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Add to Cart Button Styles */
+.btn-add-to-cart {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add-to-cart:active {
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cart-icon {
+        font-size: 1.3rem;
+    }
+
+    .star {
+        font-size: 1rem;
+    }
+
+    .cart-modal-body {
+        max-height: 300px;
+    }
+}
