@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer - Plan Your Next Adventure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Travel Explorer 🌍</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#states">States</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><i class="fas fa-user"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="cart-icon" title="View Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge" style="display: none;">0</span>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <div>
+            <!-- <img src="image/travelbg.jpg" alt=""> -->
+            <h1 class="display-2 fw-bold">Discover India's Treasures</h1>
+            <p class="lead">Your journey begins with a single click. Explore vibrant states and hidden gems.</p>
+            <a href="#states" class="btn btn-custom-nav btn-lg mt-3">Start Exploring</a>
+        </div>
+    </header>
+
+    <section id="states" class="container py-5">
+        <h2 class="text-center mb-9"></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+
+                        <img src="image/ta1c.jpg" class="card-img-top" alt="Victoria Memorial, Kolkata">
+                        <h5 class="card-title">Maharashtra</h5>
+                        <p class="card-text">Maharashtra specializes in a fusion of vibrant history, Bollywood glamour,
+                            and natural diversity.</p>
+                        <a href="state_maharashtra.html" class="btn btn-outline-dark w-100">Explore Maharashtra</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+                        <img src="  image/hava1.jpeg" class="card-img-top" alt="Victoria Memorial, Kolkata">
+                        <h5 class="card-title">Rajasthan</h5>
+                        <p class="card-text">Land of Kings. Explore majestic forts and colorful cities like **Jaipur**
+                            and **Udaipur**.</p>
+                        <a href="state_rajasthan.html" class="btn btn-outline-dark w-100">Explore Rajasthan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+                        <img src="image/ke4.jpg" class="card-img-top" alt="Victoria Memorial, Kolkata">
+                        <h5 class="card-title">Kerala</h5>
+                        <p class="card-text">God's Own Country. Serene backwaters, lush green hills, and beautiful
+                            beaches.</p>
+                        <a href="state_kerala.html" class="btn btn-outline-dark w-100">Explore Kerala</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+
+                        <img src="image/j&k.jpg" class="card-img-top" alt="Victoria Memorial, Kolkata">
+                        <h5 class="card-title">Jammu & kashmir</h5>
+                        <p class="card-text">Heaven on Earth: majestic Himalayas, serene lakes, and unique cultural
+                            blend.
+                        </p>
+                        <a href="state_Jammu&Kashmir.html" class="btn btn-outline-dark w-100">Explore Jammu & kashmir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+                        <img src="image/up2.jpg" class="card-img-top" alt="Victoria Memorial, Kolkata">
+                        <h5 class="card-title">Uttar Pradesh</h5>
+                        <p class="card-text"> Multiculture of India
+                        </p>
+                        <a href="state_uttarpradesh.html" class="btn btn-outline-dark w-100">Explore UP</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="image/new delhi index2.jpg" class="card-img-top" alt="Victoria Memorial, Kolkata">
+                    <div class="card-body">
+                        <h5 class="card-title">New Delhi</h5>
+                        <p class="card-text"> Capital Of India </p>
+                        <a href="state_Delhi.html" class="btn btn-outline-dark w-100">Explore New Delhi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+                        <img src="image/gujrat.webp" class="card-img-top" alt="Victoria Memorial, Kolkata">
+                        <h5 class="card-title">Gujarat</h5>
+                        <p class="card-text">Jewel of the West
+                            .</p>
+                        <a href="state_Gujarat.html" class="btn btn-outline-dark w-100">Explore Gujarat</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+
+
+
+
+                    <div class="card-body">
+                        <img src="image/hii3.jpg" class="card-img-top" alt="himanchal pradesh">
+
+                        <h5 class="card-title">Himachal Pradesh</h5>
+                        <p class="card-text">Himalayan paradise. Trekking, mountain views, and quiet retreats in
+                            **Manali** and **Shimla**.</p>
+                        <a href="state_himachal.html" class="btn btn-outline-dark w-100">Explore Himachal</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+
+                        <img src="image/wb.PNG" class="card-img-top" alt="Victoria Memorial, Kolkata">
+                        <h5 class="card-title">West Bengal</h5>
+                        <p class="card-text">Cultural hub. Visit the intellectual capital **Kolkata** and the tea
+                            gardens of **Darjeeling**.</p>
+                        <a href="state_westbengal.html" class="btn btn-outline-dark w-100">Explore West Bengal</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5 bg-light">
+        <h2 class="text-center mb-5">Contact Us</h2>
+
+        <div class="row g-5">
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <h3>Get in Touch</h3>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-6">
+                <h3>Contact Information</h3>
+                <p class="lead">Have questions? Reach out to us!</p>
+
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <strong>Email:</strong><br>
+                        info@travelexplorer.com
+                    </li>
+
+                    <li class="mb-3">
+                        <strong>Phone:</strong><br>
+                        +91 98765 43210
+                    </li>
+
+                    <li class="mb-3">
+                        <strong>Follow Us:</strong><br>
+                        <div class="d-flex gap-3 mt-2">
+                            <a href="https://www.instagram.com/india_tourism_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                class="text-dark fs-4">
+                                <i class="fab fa-instagram text-danger"></i>
+                            </a>
+                            <a href="#" class="text-dark fs-4">
+                                <i class="fab fa-facebook text-primary"></i>
+                            </a>
+                            <a href="#" class="text-dark fs-4">
+                                <i class="fab fa-twitter text-info"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <footer class="bg-custom-nav text-dark py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 Travel Explorer. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">
+                        <i class="fas fa-shopping-cart me-2"></i>Your Cart
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body cart-modal-body">
+                    <div id="cartItemsContainer">
+                        <!-- Cart items will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="cart-total w-100 text-center mb-3">
+                        Total: <span id="cartTotal">₹0</span>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Continue Exploring
+                    </button>
+                    <button type="button" class="btn btn-primary" id="checkoutBtn">
+                        Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentModalLabel">Complete Your Booking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="paymentForm">
+                        <!-- Customer Details -->
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="customerName" placeholder="Enter your full name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerEmail" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="customerEmail" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerPhone" class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control" id="customerPhone"
+                                placeholder="Enter your phone number" required>
+                        </div>
+                        <hr>
+                        <!-- Payment Method Selection -->
+                        <div class="mb-3">
+                            <label class="form-label">Select Payment Method *</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard"
+                                    value="Credit Card" checked>
+                                <label class="form-check-label" for="creditCard">
+                                    <i class="fas fa-credit-card me-2"></i> Credit Card
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="debitCard"
+                                    value="Debit Card">
+                                <label class="form-check-label" for="debitCard">
+                                    <i class="fas fa-credit-card me-2"></i> Debit Card
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="upi" value="UPI">
+                                <label class="form-check-label" for="upi">
+                                    <i class="fas fa-mobile-alt me-2"></i> UPI
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="netBanking"
+                                    value="Net Banking">
+                                <label class="form-check-label" for="netBanking">
+                                    <i class="fas fa-university me-2"></i> Net Banking
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="qrCode"
+                                    value="QRCode">
+                                <label class="form-check-label" for="qrCode">
+                                    <i class="fas fa-qrcode me-2"></i> QR Code
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="razorpay"
+                                    value="Razorpay">
+                                <label class="form-check-label" for="razorpay">
+                                    <i class="fas fa-credit-card me-2"></i> Razorpay (Cards, UPI, NetBanking)
+                                </label>
+                            </div>
+                        </div>
+                        <!-- QR Code Container -->
+                        <div id="qrCodeContainer" class="text-center d-none mb-3">
+                            <p class="fw-bold">Scan this QR Code to Pay:</p>
+                            <img src="image2/payment .jpg" alt="Payment QR Code" class="img-fluid border p-2"
+                                style="max-width: 300px;">
+                            <p class="text-muted small mt-2">After payment, click "Pay Now" to confirm your booking</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="payNowBtn">Pay Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
